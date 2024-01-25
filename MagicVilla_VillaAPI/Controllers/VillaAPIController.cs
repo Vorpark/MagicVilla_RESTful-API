@@ -1,4 +1,5 @@
-﻿using MagicVilla_VillaAPI.Models.DTO;
+﻿using MagicVilla_VillaAPI.Data;
+using MagicVilla_VillaAPI.Models.DTO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MagicVilla_VillaAPI.Controllers
@@ -10,11 +11,7 @@ namespace MagicVilla_VillaAPI.Controllers
         [HttpGet]
         public IEnumerable<VillaDTO> GetVillas()
         {
-            return new List<VillaDTO>()
-            {
-                new VillaDTO{Id = 1, Name = "Pool VIew"},
-                new VillaDTO{Id = 2, Name = "Beach View"}
-            };
+            return VillaStore.villaList;
         }
     }
 }
