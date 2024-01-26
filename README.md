@@ -1,3 +1,3 @@
 # MagicVilla
 
-The project is not finished.
+This is an educational project not for use.
